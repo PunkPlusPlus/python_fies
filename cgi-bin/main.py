@@ -7,6 +7,7 @@ cursor = connection.cursor()
 cursor.execute("SELECT * FROM Users")
 users = cursor.fetchall()
 connection.close()
+print('hello')
 
 markup = ""
 
@@ -21,8 +22,6 @@ Content-Type: text/html
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<h1>Hello, World!</h1>
-<br>
 {markup}
 </body>
 </html>"""
